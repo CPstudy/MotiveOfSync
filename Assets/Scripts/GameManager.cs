@@ -39,8 +39,8 @@ public class GameManager : MonoBehaviour
                 quizes[i] = new Quiz();
             }
 
-            quizes[0].Question = "육지 활동이 가능한 것을 @개 고르시오.";
-            quizes[0].Answers = new string[] { "whale", "squid", "manta", "stingray", "shark", "octopus", "turtle" };
+            quizes[0].Question = "육지 활동이 불가능한 것을 @개 고르시오.";
+            quizes[0].Answers = new string[] { "whale", "squid", "manta", "stingray", "shark", "octopus" };
 
             quizes[1].Question = "이빨이 없는 동물을 @개 고르시오. ";
             quizes[1].Answers = new string[] { "pheas", "crow" };
@@ -232,5 +232,10 @@ public class GameManager : MonoBehaviour
         }
 
         return arr;
+    }
+
+    public void ClickMode()
+    {
+
     }
 }
